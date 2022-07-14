@@ -47,16 +47,16 @@ Let's install and use pm2 as a process manager. Install pm2 using the commands b
 `sudo npm i pm2 -g`
 Start the application using the following command:
 
-pm2 start app.js
-Step 4 - Configuring Nginx as a reverse proxy
+`pm2 start app.js`
+# Step 4 - Configuring Nginx as a reverse proxy
 Now let's configure Nginx as a reverse proxy. This will help us get the security features from Nginx. Also, we can serve static content using Nginx.
 
 Let's install Nginx using the following command:
 
-sudo apt install nginx
+`sudo apt install nginx`
 Let's create a conf file for our Nodejs app using the command below
 
-sudo vi /etc/nginx/sites-available/nodeApp
+`sudo vi /etc/nginx/sites-available/nodeApp`
 Copy the following content to this file
 
 server{
@@ -73,7 +73,8 @@ server{
 }
 Activate this configuration using the command below:
 
-sudo ln -s /etc/nginx/sites-available/nodeApp /etc/nginx/sites-enabled
+`sudo ln -s /etc/nginx/sites-available/nodeApp /etc/nginx/sites-enabled`
+
 Visit http://your-ip/ and your application should work fine. Happy coding!
 
 
