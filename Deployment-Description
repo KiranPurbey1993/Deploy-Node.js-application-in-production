@@ -1,7 +1,7 @@
 How to deploy a Node.js application in production
 In this post, we will see how to run and deploy NodeJS apps in production. Follow the steps below:
 
-Step 1 - Install Nodejs
+## Step 1 - Install Nodejs
 Let's download nodejs from Nodesource. NodeSource is a company which provides enterprise-grade Node support and maintains a repository containing the latest versions of Node.js.
 
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -13,7 +13,7 @@ Check the installation of node and npm using the following commands:
 node --version && npm --version
 You will see the versions of nodejs and npm
 
-Step 2 - Creating a sample nodejs file
+## Step 2 - Creating a sample nodejs file
 Let's create a sample app and paste some basic code into it.
 
 sudo vi app.js
@@ -38,7 +38,7 @@ run the application
 node app.js
 You should now be able to see the hello world page when you visit http://server-ip:3000
 
-Step 3 - Using pm2 as a process manager
+## Step 3 - Using pm2 as a process manager
 
 Let's install and use pm2 as a process manager. Install pm2 using the commands below:
 
